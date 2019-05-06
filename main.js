@@ -51,8 +51,17 @@ var cognome_utente= prompt('Inserisci un cognome ');
 
 var età_utente= parseInt(prompt('inserisci la sua età'));
 
+//uso una funziona a costruttore
+var studentiNew = function(nome, cognome, età) {
+  this.name = nome;
+  this.cognome = cognome;
+  this.età = età;
+}
 
-studenti.push(nome_utente, cognome_utente, età_utente);
+//inizializzo una variabile con la creazione di un nuovo oggetto
+var studenteInserito = new studentiNew(nome_utente, cognome_utente, età_utente);
 
-console.log(studenti);
+//HO PROVATO A PUSHARE I DATI INSERITI NELL'ARRAY DI OGGETTI MA NON VIENE INSERITO COME UN NUOVO OGGETTO
+// studenti.push(nome_utente, cognome_utente, età_utente);
 
+console.log(studenteInserito);
