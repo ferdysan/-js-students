@@ -6,9 +6,10 @@ var studente ={
   cognome: 'Martino',
   età: 31
 }
-
+document.writeln('---------------PRIMO ESERCIZIO---------------</br>');
 //stampo le proprietà di studente
 for (var field in studente) {
+
   document.writeln(studente[field]);
 }
 
@@ -33,9 +34,11 @@ var studenti =[
   }
 ]
 
+document.writeln('<br><br>---------------SECONDO ESERCIZIO---------------</br>');
 //stampo l'array con gli studenti
 for( var i = 0; i<studenti.length; i++){
-  document.writeln('Nome : ' + studenti[i].nome + ' Cognome : ' + studenti[i].cognome + ' età :  ' + studenti[i].età + '</br>' );
+
+  document.writeln('</br> Nome : ' + studenti[i].nome + ' Cognome : ' + studenti[i].cognome + '</br>');
 }
 
 // - Dare la possibilità all’utente attraverso 3 prompt di aggiungere un nuovo oggetto studente inserendo nell’ordine: nome, cognome e età.
@@ -48,6 +51,8 @@ var cognome_utente= prompt('Inserisci un cognome ');
 
 var età_utente= parseInt(prompt('inserisci la sua età'));
 
+
 studenti.push(nome_utente, cognome_utente, età_utente);
 
 console.log(studenti);
+
