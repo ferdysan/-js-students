@@ -39,7 +39,7 @@ for( var i = 0; i<studenti.length; i++){
 }
 
 
-//creo dei prompt per inserire un nuovo oggetto
+//creo dei prompt per inserire un nuovo oggetto PARTE DA RIVEDERE
 
 var nome_utente= prompt('Inserisci un nome ');
 
