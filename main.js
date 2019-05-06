@@ -1,6 +1,4 @@
-// - Creare un oggetto che descriva uno studente con le seguenti proprietà: nome, cognome e età. Stampare a schermo attraverso il for in tutte le proprietà.
-// - Creare un array di oggetti di studenti. Ciclare su tutti gli studenti e stampare per ognuno nome e cognome
-// - Dare la possibilità all’utente attraverso 3 prompt di aggiungere un nuovo oggetto studente inserendo nell’ordine: nome, cognome e età.
+// - Creare un oggetto che descriva uno studente con le seguenti proprietà: nome, cognome e età. Stampare a schermo
 
 //creo un oggetto studente
 var studente ={
@@ -14,6 +12,8 @@ for (var field in studente) {
   document.writeln(studente[field]);
 }
 
+
+// - Creare un array di oggetti di studenti. Ciclare su tutti gli studenti e stampare per ognuno nome e cognome
 //creo un array di oggetti
 var studenti =[
   {
@@ -38,6 +38,7 @@ for( var i = 0; i<studenti.length; i++){
   document.writeln('Nome : ' + studenti[i].nome + ' Cognome : ' + studenti[i].cognome + ' età :  ' + studenti[i].età + '</br>' );
 }
 
+// - Dare la possibilità all’utente attraverso 3 prompt di aggiungere un nuovo oggetto studente inserendo nell’ordine: nome, cognome e età.
 
 //creo dei prompt per inserire un nuovo oggetto PARTE DA RIVEDERE
 
